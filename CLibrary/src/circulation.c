@@ -1,4 +1,5 @@
 #include "library.h"
+#include "storage.h"
 
 #include <limits.h>
 #include <stdio.h>

@@ -61,10 +61,6 @@ void ui_menu(void);
 bool ui_startup(Library *library);
 void ui_run(Library *library);
 
-bool storage_load(Library *library);
-bool storage_save_books(const Library *library);
-bool storage_save_loans(const Library *library);
-
 Book *catalogue_find(Library *library, int id);
 const Book *catalogue_find_const(const Library *library, int id);
 bool catalogue_available(const Library *library, const Book *book);
