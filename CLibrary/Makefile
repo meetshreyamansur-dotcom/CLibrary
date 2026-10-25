@@ -16,7 +16,7 @@ SOURCES := \
 
 all: $(TARGET)
 
-$(TARGET): $(SOURCES) include/library.h | build
+$(TARGET): $(SOURCES) include/library.h src/storage.h | build
 	$(CC) $(CPPFLAGS) $(CFLAGS) $(SOURCES) -o $@
 
 build:
