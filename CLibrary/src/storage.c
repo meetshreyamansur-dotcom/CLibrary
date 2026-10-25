@@ -11,6 +11,7 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
+//Updated to use C11 standard, so we can use bool type from stdbool.h
 static void encode_field(FILE *file, const char *value) {
     for (const unsigned char *p = (const unsigned char *)value; *p; p++) {
         if (*p == '%' || *p == '\t' || *p == '\n' || *p == '\r') {
